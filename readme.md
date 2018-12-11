@@ -28,7 +28,7 @@ You have to run all the script from the project root:
 ./proxy/scripts/nginx-logs.sh
 ```
 
-## Example application
+## Example Application
 
 ### Setup
 Copy `./apps/example-api/.env.example` into `./apps/example-api/.env` and fill the variables
@@ -43,4 +43,4 @@ Copy `./apps/example-api/.env.example` into `./apps/example-api/.env` and fill t
 - https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion
 
 # Thanks To
-- (Ivoputzer)[https://github.com/ivoputzer] who helped me a lot :)
+- [Ivoputzer](https://github.com/ivoputzer) who helped me a lot :)
