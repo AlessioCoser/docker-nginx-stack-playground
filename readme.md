@@ -1,4 +1,5 @@
 # Docker Nginx Stack Playground
+A Set of scripts in order to deploy a nginx stack that works with docker container services on a Remote Server
 
 ## Prerequisites
 - Remote Server access
