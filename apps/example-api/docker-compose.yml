@@ -1,0 +1,18 @@
+version: '2'
+
+networks:
+  exposed_services:
+    external:
+      name: exposed_services
+
+services:
+  minimal-docker:
+    image: local/example-api
+    expose:
+      - "8080"
+    environment:
+      - VIRTUAL_HOST=${VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${VIRTUAL_HOST}
+      - LETSENCRYPT_EMAIL=${VIRTUAL_HOST_CONTACT}
+    networks:
+      - exposed_services
