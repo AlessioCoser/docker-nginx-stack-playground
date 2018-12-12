@@ -10,9 +10,7 @@ services:
     image: local/example-api
     expose:
       - "8080"
-    environment:
-      - VIRTUAL_HOST=${VIRTUAL_HOST}
-      - LETSENCRYPT_HOST=${VIRTUAL_HOST}
-      - LETSENCRYPT_EMAIL=${VIRTUAL_HOST_CONTACT}
+    env_file:
+      - .env
     networks:
       - exposed_services
